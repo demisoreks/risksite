@@ -171,7 +171,7 @@
                                     <a class="nav-link" href="{{ route('home') }}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('policies') }}">Policies</a>
+                                    <a class="nav-link" href="{{ route('profile') }}">Risk Profile</a>
                                 </li>
                             </ul>
                         </div>
@@ -180,7 +180,7 @@
                 <div class="row bg-primary">
                     <div class="col-12 text-center text-white" style="padding: 15px;">
                         Join our security risk advisory mailing list!
-                        <a class="btn btn-secondary text-primary">Subscribe Now</a>
+                        <a class="btn btn-secondary text-primary" data-toggle="modal" data-target="#modal1">Subscribe Now</a>
                     </div>
                 </div>
             </div>
@@ -193,25 +193,59 @@
                         </div>
                         <div class="col-md-5" class="col-md-8" style="margin-bottom: 20px;">
                             <div class="row">
+                                <div class="col-md-12" style="margin-bottom: 15px;">
+                                    <a href="{{ route('profile') }}" class="btn btn-block btn-blue-grey btn-lg">National Security Risk Profile</a>
+                                </div>
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://oyogist.com/wp-content/uploads/2020/04/Coronavirus-update-in-Nigeria-NCDC-1-1080x1000.jpeg" width="100%" />
+                                            <img src="https://pbs.twimg.com/media/EV1bUScXkAAsnCq?format=jpg&name=medium" width="100%" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>NATIONAL RISK PROFILE</strong>
+                                            <strong>HALOGEN GROUP</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://www.worldatlas.com/webimage/countrys/africa/outline/ngout.gif" width="100%" />
+                                            <div id="media" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <a target="_blank" href="https://halogen-group.com/">{{ Html::image('images/logos/halogen.png', 'Halogen Group', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.png', 'PS Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://armadahalogen.com/">{{ Html::image('images/logos/armada.png', 'Armada Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://armourxhalogen.com/">{{ Html::image('images/logos/armourx.png', 'ArmourX Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://averthalogen.com/">{{ Html::image('images/logos/avert.png', 'Avert Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://academyhalogen.com/">{{ Html::image('images/logos/academy.png', 'Academy Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a target="_blank" href="https://avanthalogen.com/">{{ Html::image('images/logos/avant.png', 'Avant Halogen', ['width' => '100%']) }}</a>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#media" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#media" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <a class="btn btn-primary btn-sm" href="{{ route('profile') }}">View Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -249,6 +283,24 @@
                         {{ Html::image('images/logo-new-small.jpg', 'Halogen Logo', ['width' => 60]) }}
                     </a><br />
                     &copy; {{ date("Y") }} All rights reserved.
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><strong>Joining mailing list!</strong></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {!! Form::model(null, ['route' => ['subscribe'], 'class' => 'form-group']) !!}
+                        @include('site/form_subscribe', ['submit_text' => 'Subscribe'])
+                        {!! Form::close() !!}
+                    </div>
                 </div>
             </div>
         </div>

@@ -23,3 +23,7 @@ Route::get('profile', [
 Route::get('states/{state_id}', [
     'as' => 'states.show', 'uses' => 'SiteController@states'
 ]);
+
+Route::post('subscribe', [
+    'as' => 'subscribe', 'uses' => 'SiteController@subscribe'
+]);
