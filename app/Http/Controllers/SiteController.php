@@ -4,10 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Carbon\Carbon;
+
 class SiteController extends Controller
 {
     public function home() {
-        return view('index');
+        $states = json_decode(API::getStates());
+        $lockdown_status = [];
+        $lockdown_color = [];
+        $lockdown_color_h = [];
+        foreach ($states as $state) {
+            if ($state->lockdown_status == "Total") {
+                $lockdown_status[$state->id] = "Total Lockdown<br />Ends: ".Carbon::parse($state->lockdown_end)->format('l, F j, Y');
+                $lockdown_color[$state->id] = "#FF0000";
+                $lockdown_color_h[$state->id] = "#990000";
+            } else if ($state->lockdown_status == "Partial") {
+                $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".Carbon::parse($state->lockdown_end)->format('l, F j, Y');
+                $lockdown_color[$state->id] = "#FFA6A6";
+                $lockdown_color_h[$state->id] = "#FF8484";
+            } else {
+                $lockdown_status[$state->id] = "No Lockdown";
+                $lockdown_color[$state->id] = "#88A4BC";
+                $lockdown_color_h[$state->id] = "#3B729F";
+            }
+        }
+        
+        return view('index', compact('states', 'lockdown_status', 'lockdown_color', 'lockdown_color_h'));
     }
     
     public function policies() {

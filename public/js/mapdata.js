@@ -73,136 +73,263 @@ var simplemaps_countrymap_mapdata={
   },
   state_specific: {
     NGA2839: {
-      name: "Borno"
+      name: "Borno",
+      color: lockdown_color[8],
+      hover_color: lockdown_color_h[8],
+      url: "states/10",
+      description: lockdown_status[8]
     },
     NGA2841: {
-      name: "Abia"
+      name: "Abia",
+      color: lockdown_color[1],
+      hover_color: lockdown_color_h[1],
+      url: "states/1",
+      description: lockdown_status[1]
     },
     NGA2842: {
-      name: "Akwa Ibom"
+      name: "Akwa Ibom",
+      color: lockdown_color[3],
+      hover_color: lockdown_color_h[3],
+      url: "states/3",
+      description: lockdown_status[3]
     },
     NGA2843: {
-      name: "Imo"
+      name: "Imo",
+      color: lockdown_color[16],
+      hover_color: lockdown_color_h[16],
+      url: "states/16",
+      description: lockdown_status[16]
     },
     NGA2844: {
-      name: "Rivers"
+      name: "Rivers",
+      color: lockdown_color[32],
+      hover_color: lockdown_color_h[32],
+      url: "states/32",
+      description: lockdown_status[32]
     },
     NGA2845: {
-      name: "Bayelsa"
+      name: "Bayelsa",
+      color: lockdown_color[6],
+      hover_color: lockdown_color_h[6],
+      url: "states/6",
+      description: lockdown_status[6]
     },
     NGA2846: {
-      name: "Benue"
+      name: "Benue",
+      color: lockdown_color[7],
+      hover_color: lockdown_color_h[7],
+      url: "states/7",
+      description: lockdown_status[7]
     },
     NGA2847: {
-      name: "Cross River"
+      name: "Cross River",
+      color: lockdown_color[9],
+      hover_color: lockdown_color_h[9],
+      url: "states/9",
+      description: lockdown_status[9]
     },
     NGA2848: {
-      name: "Taraba"
+      name: "Taraba",
+      color: lockdown_color[34],
+      hover_color: lockdown_color_h[34],
+      url: "states/34",
+      description: lockdown_status[34]
     },
     NGA2849: {
-      name: "Kwara"
+      name: "Kwara",
+      color: lockdown_color[23],
+      hover_color: lockdown_color_h[23],
+      url: "states/23",
+      description: lockdown_status[23]
     },
     NGA2850: {
       name: "Lagos",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/9"
+      color: lockdown_color[24],
+      hover_color: lockdown_color_h[24],
+      url: "states/24",
+      description: lockdown_status[24]
     },
     NGA2851: {
-      name: "Niger"
+      name: "Niger",
+      color: lockdown_color[26],
+      hover_color: lockdown_color_h[26],
+      url: "states/26",
+      description: lockdown_status[26]
     },
     NGA2852: {
       name: "Ogun",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/10"
+      color: lockdown_color[27],
+      hover_color: lockdown_color_h[27],
+      url: "states/27",
+      description: lockdown_status[27]
     },
     NGA2853: {
-      name: "Ondo"
+      name: "Ondo",
+      color: lockdown_color[28],
+      hover_color: lockdown_color_h[28],
+      url: "states/28",
+      description: lockdown_status[28]
     },
     NGA2854: {
-      name: "Ekiti"
+      name: "Ekiti",
+      color: lockdown_color[14],
+      hover_color: lockdown_color_h[14],
+      url: "states/14",
+      description: lockdown_status[14]
     },
     NGA2855: {
-      name: "Osun"
+      name: "Osun",
+      color: lockdown_color[29],
+      hover_color: lockdown_color_h[29],
+      url: "states/29",
+      description: lockdown_status[29]
     },
     NGA2856: {
-      name: "Oyo"
+      name: "Oyo",
+      color: lockdown_color[30],
+      hover_color: lockdown_color_h[30],
+      url: "states/30",
+      description: lockdown_status[30]
     },
     NGA2857: {
-      name: "Anambra"
+      name: "Anambra",
+      color: lockdown_color[4],
+      hover_color: lockdown_color_h[4],
+      url: "states/4",
+      description: lockdown_status[4]
     },
     NGA2858: {
-      name: "Bauchi"
+      name: "Bauchi",
+      color: lockdown_color[5],
+      hover_color: lockdown_color_h[5],
+      url: "states/5",
+      description: lockdown_status[5]
     },
     NGA2859: {
-      name: "Gombe"
+      name: "Gombe",
+      color: lockdown_color[15],
+      hover_color: lockdown_color_h[15],
+      url: "states/15",
+      description: lockdown_status[15]
     },
     NGA2860: {
       name: "Delta",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/12"
+      color: lockdown_color[10],
+      hover_color: lockdown_color_h[10],
+      url: "states/10",
+      description: lockdown_status[10]
     },
     NGA2861: {
-      name: "Edo"
+      name: "Edo",
+      color: lockdown_color[13],
+      hover_color: lockdown_color_h[13],
+      url: "states/13",
+      description: lockdown_status[13]
     },
     NGA2862: {
-      name: "Enugu"
+      name: "Enugu",
+      color: lockdown_color[12],
+      hover_color: lockdown_color_h[12],
+      url: "states/12",
+      description: lockdown_status[12]
     },
     NGA2863: {
-      name: "Ebonyi"
+      name: "Ebonyi",
+      color: lockdown_color[11],
+      hover_color: lockdown_color_h[11],
+      url: "states/11",
+      description: lockdown_status[11]
     },
     NGA2864: {
-      name: "Kaduna"
+      name: "Kaduna",
+      color: lockdown_color[18],
+      hover_color: lockdown_color_h[18],
+      url: "states/18",
+      description: lockdown_status[18]
     },
     NGA2865: {
-      name: "Kogi"
+      name: "Kogi",
+      color: lockdown_color[22],
+      hover_color: lockdown_color_h[22],
+      url: "states/22",
+      description: lockdown_status[22]
     },
     NGA2866: {
-      name: "Plateau"
+      name: "Plateau",
+      color: lockdown_color[31],
+      hover_color: lockdown_color_h[31],
+      url: "states/31",
+      description: lockdown_status[31]
     },
     NGA2867: {
-      name: "Nassarawa"
+      name: "Nassarawa",
+      color: lockdown_color[25],
+      hover_color: lockdown_color_h[25],
+      url: "states/25",
+      description: lockdown_status[25]
     },
     NGA2868: {
       name: "Jigawa",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/13"
+      color: lockdown_color[17],
+      hover_color: lockdown_color_h[17],
+      url: "states/17",
+      description: lockdown_status[17]
     },
     NGA2869: {
-      name: "Kano"
+      name: "Kano",
+      color: lockdown_color[19],
+      hover_color: lockdown_color_h[19],
+      url: "states/19",
+      description: lockdown_status[19]
     },
     NGA2870: {
-      name: "Katsina"
+      name: "Katsina",
+      color: lockdown_color[20],
+      hover_color: lockdown_color_h[20],
+      url: "states/20",
+      description: lockdown_status[20]
     },
     NGA2871: {
-      name: "Sokoto"
+      name: "Sokoto",
+      color: lockdown_color[33],
+      hover_color: lockdown_color_h[33],
+      url: "states/33",
+      description: lockdown_status[33]
     },
     NGA2872: {
       name: "Zamfara",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/14"
+      color: lockdown_color[36],
+      hover_color: lockdown_color_h[36],
+      url: "states/36",
+      description: lockdown_status[36]
     },
     NGA2873: {
       name: "Yobe",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/15"
+      color: lockdown_color[35],
+      hover_color: lockdown_color_h[35],
+      url: "states/35",
+      description: lockdown_status[35]
     },
     NGA2879: {
-      name: "Kebbi"
+      name: "Kebbi",
+      color: lockdown_color[21],
+      hover_color: lockdown_color_h[21],
+      url: "states/21",
+      description: lockdown_status[21]
     },
     NGA2881: {
-      name: "Adamawa"
+      name: "Adamawa",
+      color: lockdown_color[2],
+      hover_color: lockdown_color_h[2],
+      url: "states/2",
+      description: lockdown_status[2]
     },
     NGA3470: {
       name: "Federal Capital Territory",
-      color: "red",
-      hover_color: "darkred",
-      url: "states/11"
+      color: lockdown_color[37],
+      hover_color: lockdown_color_h[37],
+      url: "states/37",
+      description: lockdown_status[37]
     }
   },
   locations: {
