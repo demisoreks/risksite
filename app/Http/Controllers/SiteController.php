@@ -55,7 +55,7 @@ class SiteController extends Controller
             if ($state->risk_rating == "High") {
                 $risk_color[$state->id] = "#FF0000";
                 $risk_color_h[$state->id] = "#990000";
-            } else if ($state->risk_rating == "Medium") {
+            } else if ($state->risk_rating == "Moderate") {
                 $risk_color[$state->id] = "#FF9900";
                 $risk_color_h[$state->id] = "#FF6600";
             } else if ($state->risk_rating == "Low") {
