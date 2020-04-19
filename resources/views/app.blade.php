@@ -101,6 +101,14 @@
         .modal-backdrop{
             z-index: 1000;
         }​
+        
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #CCC;
+            border-radius: 50%;
+            display: inline-block;
+        }
         </style>
         
         {!! Html::style('css/app.css') !!}
@@ -202,7 +210,7 @@
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://pbs.twimg.com/media/EV1bUScXkAAsnCq?format=jpg&name=medium" width="100%" />
+                                            <img src="https://pbs.twimg.com/media/EV6s_sxWkAALyK4?format=jpg&name=medium" width="100%" />
                                         </div>
                                     </div>
                                 </div>

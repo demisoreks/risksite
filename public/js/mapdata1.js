@@ -40,7 +40,7 @@ var simplemaps_countrymap_mapdata={
    
     //Zoom settings
     zoom: "no",
-    manual_zoom: "yes",
+    manual_zoom: "no",
     back_image: "no",
     initial_back: "no",
     initial_zoom: "-1",
@@ -73,188 +73,263 @@ var simplemaps_countrymap_mapdata={
   },
   state_specific: {
     NGA2839: {
-      color: "#fb3",
       name: "Borno",
-      description: " "
+      color: risk_color[8],
+      hover_color: risk_color_h[8],
+      url: "states/10",
+      description: risk_rating[8]
     },
     NGA2841: {
-      color: "#ff3547",
       name: "Abia",
-      description: " "
+      color: risk_color[1],
+      hover_color: risk_color_h[1],
+      url: "states/1",
+      description: risk_rating[1]
     },
     NGA2842: {
-      color: "#00c851",
       name: "Akwa Ibom",
-      description: " "
+      color: risk_color[3],
+      hover_color: risk_color_h[3],
+      url: "states/3",
+      description: risk_rating[3]
     },
     NGA2843: {
-      color: "#00c851",
       name: "Imo",
-      description: " "
+      color: risk_color[16],
+      hover_color: risk_color_h[16],
+      url: "states/16",
+      description: risk_rating[16]
     },
     NGA2844: {
-      color: "#00c851",
       name: "Rivers",
-      description: " "
+      color: risk_color[32],
+      hover_color: risk_color_h[32],
+      url: "states/32",
+      description: risk_rating[32]
     },
     NGA2845: {
-      color: "#fb3",
       name: "Bayelsa",
-      description: " "
+      color: risk_color[6],
+      hover_color: risk_color_h[6],
+      url: "states/6",
+      description: risk_rating[6]
     },
     NGA2846: {
-      color: "#fb3",
       name: "Benue",
-      description: " "
+      color: risk_color[7],
+      hover_color: risk_color_h[7],
+      url: "states/7",
+      description: risk_rating[7]
     },
     NGA2847: {
-      color: "#00c851",
       name: "Cross River",
-      description: " "
+      color: risk_color[9],
+      hover_color: risk_color_h[9],
+      url: "states/9",
+      description: risk_rating[9]
     },
     NGA2848: {
-      color: "#ff3547",
       name: "Taraba",
-      description: " "
+      color: risk_color[34],
+      hover_color: risk_color_h[34],
+      url: "states/34",
+      description: risk_rating[34]
     },
     NGA2849: {
-      color: "#ff3547",
       name: "Kwara",
-      description: " "
+      color: risk_color[23],
+      hover_color: risk_color_h[23],
+      url: "states/23",
+      description: risk_rating[23]
     },
     NGA2850: {
-      color: "#ff3547",
-      name: "Lagos"
+      name: "Lagos",
+      color: risk_color[24],
+      hover_color: risk_color_h[24],
+      url: "states/24",
+      description: risk_rating[24]
     },
     NGA2851: {
-      color: "#fb3",
       name: "Niger",
-      description: " "
+      color: risk_color[26],
+      hover_color: risk_color_h[26],
+      url: "states/26",
+      description: risk_rating[26]
     },
     NGA2852: {
-      color: "#00c851",
       name: "Ogun",
-      description: " "
+      color: risk_color[27],
+      hover_color: risk_color_h[27],
+      url: "states/27",
+      description: risk_rating[27]
     },
     NGA2853: {
-      color: "#ff3547",
       name: "Ondo",
-      description: " "
+      color: risk_color[28],
+      hover_color: risk_color_h[28],
+      url: "states/28",
+      description: risk_rating[28]
     },
     NGA2854: {
-      color: "#fb3",
       name: "Ekiti",
-      description: " "
+      color: risk_color[14],
+      hover_color: risk_color_h[14],
+      url: "states/14",
+      description: risk_rating[14]
     },
     NGA2855: {
-      color: "#00c851",
       name: "Osun",
-      description: " "
+      color: risk_color[29],
+      hover_color: risk_color_h[29],
+      url: "states/29",
+      description: risk_rating[29]
     },
     NGA2856: {
-      color: "#00c851",
       name: "Oyo",
-      description: " "
+      color: risk_color[30],
+      hover_color: risk_color_h[30],
+      url: "states/30",
+      description: risk_rating[30]
     },
     NGA2857: {
-      color: "#fb3",
       name: "Anambra",
-      description: " "
+      color: risk_color[4],
+      hover_color: risk_color_h[4],
+      url: "states/4",
+      description: risk_rating[4]
     },
     NGA2858: {
-      color: "#fb3",
       name: "Bauchi",
-      description: " "
+      color: risk_color[5],
+      hover_color: risk_color_h[5],
+      url: "states/5",
+      description: risk_rating[5]
     },
     NGA2859: {
-      color: "#ff3547",
       name: "Gombe",
-      description: " "
+      color: risk_color[15],
+      hover_color: risk_color_h[15],
+      url: "states/15",
+      description: risk_rating[15]
     },
     NGA2860: {
-      color: "#ff3547",
       name: "Delta",
-      description: " "
+      color: risk_color[10],
+      hover_color: risk_color_h[10],
+      url: "states/10",
+      description: risk_rating[10]
     },
     NGA2861: {
-      color: "#ff3547",
       name: "Edo",
-      description: " "
+      color: risk_color[13],
+      hover_color: risk_color_h[13],
+      url: "states/13",
+      description: risk_rating[13]
     },
     NGA2862: {
-      color: "#00c851",
       name: "Enugu",
-      description: " "
+      color: risk_color[12],
+      hover_color: risk_color_h[12],
+      url: "states/12",
+      description: risk_rating[12]
     },
     NGA2863: {
-      color: "#00c851",
       name: "Ebonyi",
-      description: " "
+      color: risk_color[11],
+      hover_color: risk_color_h[11],
+      url: "states/11",
+      description: risk_rating[11]
     },
     NGA2864: {
-      color: "#ff3547",
       name: "Kaduna",
-      description: " "
+      color: risk_color[18],
+      hover_color: risk_color_h[18],
+      url: "states/18",
+      description: risk_rating[18]
     },
     NGA2865: {
-      color: "#fb3",
       name: "Kogi",
-      description: " "
+      color: risk_color[22],
+      hover_color: risk_color_h[22],
+      url: "states/22",
+      description: risk_rating[22]
     },
     NGA2866: {
-      color: "#ff3547",
       name: "Plateau",
-      description: " "
+      color: risk_color[31],
+      hover_color: risk_color_h[31],
+      url: "states/31",
+      description: risk_rating[31]
     },
     NGA2867: {
-      color: "#00c851",
       name: "Nassarawa",
-      description: " "
+      color: risk_color[25],
+      hover_color: risk_color_h[25],
+      url: "states/25",
+      description: risk_rating[25]
     },
     NGA2868: {
-      color: "#00c851",
       name: "Jigawa",
-      description: " "
+      color: risk_color[17],
+      hover_color: risk_color_h[17],
+      url: "states/17",
+      description: risk_rating[17]
     },
     NGA2869: {
-      color: "#ff3547",
       name: "Kano",
-      description: " "
+      color: risk_color[19],
+      hover_color: risk_color_h[19],
+      url: "states/19",
+      description: risk_rating[19]
     },
     NGA2870: {
-      color: "#fb3",
       name: "Katsina",
-      description: " "
+      color: risk_color[20],
+      hover_color: risk_color_h[20],
+      url: "states/20",
+      description: risk_rating[20]
     },
     NGA2871: {
-      color: "#ff3547",
       name: "Sokoto",
-      description: " "
+      color: risk_color[33],
+      hover_color: risk_color_h[33],
+      url: "states/33",
+      description: risk_rating[33]
     },
     NGA2872: {
-      color: "#00c851",
       name: "Zamfara",
-      description: " "
+      color: risk_color[36],
+      hover_color: risk_color_h[36],
+      url: "states/36",
+      description: risk_rating[36]
     },
     NGA2873: {
-      color: "#ff3547",
       name: "Yobe",
-      description: " "
+      color: risk_color[35],
+      hover_color: risk_color_h[35],
+      url: "states/35",
+      description: risk_rating[35]
     },
     NGA2879: {
-      color: "#ff3547",
       name: "Kebbi",
-      description: " "
+      color: risk_color[21],
+      hover_color: risk_color_h[21],
+      url: "states/21",
+      description: risk_rating[21]
     },
     NGA2881: {
-      color: "#ff3547",
       name: "Adamawa",
-      description: " "
+      color: risk_color[2],
+      hover_color: risk_color_h[2],
+      url: "states/2",
+      description: risk_rating[2]
     },
     NGA3470: {
-      color: "#ff3547",
       name: "Federal Capital Territory",
-      description: " "
+      color: risk_color[37],
+      hover_color: risk_color_h[37],
+      url: "states/37",
+      description: risk_rating[37]
     }
   },
   locations: {},
