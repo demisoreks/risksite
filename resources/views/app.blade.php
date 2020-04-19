@@ -181,6 +181,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('profile') }}">Risk Profile</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('travel') }}">Travel Advisory</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -201,58 +204,49 @@
                         </div>
                         <div class="col-md-5" class="col-md-8" style="margin-bottom: 20px;">
                             <div class="row">
+                                <!--
                                 <div class="col-md-12" style="margin-bottom: 15px;">
                                     <a href="{{ route('profile') }}" class="btn btn-block btn-blue-grey btn-lg">National Security Risk Profile</a>
                                 </div>
+                                -->
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://pbs.twimg.com/media/EV6s_sxWkAALyK4?format=jpg&name=medium" width="100%" />
+                                            <img src="https://pbs.twimg.com/media/EV6s_sxWkAALyK4?format=jpg&name=medium" class="img-fluid" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>HALOGEN GROUP</strong>
+                                            <strong>RISK PROFILE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <div id="media" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <a target="_blank" href="https://halogen-group.com/">{{ Html::image('images/logos/halogen.png', 'Halogen Group', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.png', 'PS Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://armadahalogen.com/">{{ Html::image('images/logos/armada.png', 'Armada Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://armourxhalogen.com/">{{ Html::image('images/logos/armourx.png', 'ArmourX Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://averthalogen.com/">{{ Html::image('images/logos/avert.png', 'Avert Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://academyhalogen.com/">{{ Html::image('images/logos/academy.png', 'Academy Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a target="_blank" href="https://avanthalogen.com/">{{ Html::image('images/logos/avant.png', 'Avant Halogen', ['width' => '100%']) }}</a>
-                                                    </div>
-                                                </div>
-                                                <a class="carousel-control-prev" href="#media" role="button" data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
-                                                    <span class="sr-only">Previous</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#media" role="button" data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
-                                                    <span class="sr-only">Next</span>
-                                                </a>
-                                            </div>
+                                            <a href="{{ route('profile') }}">{{ Html::image('images/profile.jpg', 'Risk Profile', ['class' => 'img-fluid']) }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="margin-bottom: 20px;">
+                                    <div class="card">
+                                        <div class="card-header bg-white text-primary">
+                                            <strong>TRAVEL ADVISORY</strong>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h1 class="text-center text-primary"><i class="fas fa-car"></i></h1>
+                                            <a class="btn btn-secondary btn-block btn-sm" href="{{ route('travel') }}">View Travel Advisory</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="margin-bottom: 20px;">
+                                    <div class="card">
+                                        <div class="card-header bg-white text-primary">
+                                            <strong>SURVEY STATS</strong>
+                                        </div>
+                                        <div class="card-body">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -282,6 +276,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row bg-secondary">
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.jpg', 'PS Halogen', ['class' => 'img-fluid']) }}</a>
+                </div>
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://armadahalogen.com/">{{ Html::image('images/logos/armada.jpg', 'Armada Halogen', ['class' => 'img-fluid']) }}</a>
+                </div>
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://armourxhalogen.com/">{{ Html::image('images/logos/armourx.jpg', 'ArmourX Halogen', ['class' => 'img-fluid']) }}</a>
+                </div>
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://averthalogen.com/">{{ Html::image('images/logos/avert.jpg', 'Avert Halogen', ['class' => 'img-fluid']) }}</a>
+                </div>
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://academyhalogen.com/">{{ Html::image('images/logos/academy.jpg', 'Academy Halogen', ['class' => 'img-fluid']) }}</a>
+                </div>
+                <div class="col-md-4 col-lg-2" style="padding: 30px;">
+                    <a target="_blank" href="https://avanthalogen.com/">{{ Html::image('images/logos/avant.jpg', 'Avant Halogen', ['class' => 'img-fluid']) }}</a>
                 </div>
             </div>
             <div class="row bg-primary text-white">

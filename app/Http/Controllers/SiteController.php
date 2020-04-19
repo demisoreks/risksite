@@ -20,7 +20,7 @@ class SiteController extends Controller
                 $lockdown_end = "Unknown";
             }
             if ($state->lockdown_status == "Total") {
-                $lockdown_status[$state->id] = "Total Lockdown<br />Ends: ".$lockdown_end;
+                $lockdown_status[$state->id] = "Lockdown<br />Ends: ".$lockdown_end;
                 $lockdown_color[$state->id] = "#FF0000";
                 $lockdown_color_h[$state->id] = "#990000";
             } else if ($state->lockdown_status == "Partial") {
@@ -37,8 +37,8 @@ class SiteController extends Controller
         return view('index', compact('states', 'lockdown_status', 'lockdown_color', 'lockdown_color_h'));
     }
     
-    public function policies() {
-        return view('policies');
+    public function travel() {
+        return view('travel');
     }
     
     public function profile() {

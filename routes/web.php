@@ -14,8 +14,8 @@
 Route::get('/', [
     'as' => 'home', 'uses' => 'SiteController@home'
 ]);
-Route::get('policies', [
-    'as' => 'policies', 'uses' => 'SiteController@policies'
+Route::get('travel', [
+    'as' => 'travel', 'uses' => 'SiteController@travel'
 ]);
 Route::get('profile', [
     'as' => 'profile', 'uses' => 'SiteController@profile'
