@@ -14,12 +14,17 @@ class SiteController extends Controller
         $lockdown_color = [];
         $lockdown_color_h = [];
         foreach ($states as $state) {
+            if ($state->lockdown_end) {
+                $lockdown_end = Carbon::parse($state->lockdown_end)->format('l, F j, Y');
+            } else {
+                $lockdown_end = "Unknown";
+            }
             if ($state->lockdown_status == "Total") {
-                $lockdown_status[$state->id] = "Total Lockdown<br />Ends: ".Carbon::parse($state->lockdown_end)->format('l, F j, Y');
+                $lockdown_status[$state->id] = "Total Lockdown<br />Ends: ".$lockdown_end;
                 $lockdown_color[$state->id] = "#FF0000";
                 $lockdown_color_h[$state->id] = "#990000";
             } else if ($state->lockdown_status == "Partial") {
-                $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".Carbon::parse($state->lockdown_end)->format('l, F j, Y');
+                $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".$lockdown_end;
                 $lockdown_color[$state->id] = "#FFA6A6";
                 $lockdown_color_h[$state->id] = "#FF8484";
             } else {
