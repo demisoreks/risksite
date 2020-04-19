@@ -11,7 +11,7 @@
 {!! Html::script('js/countrymap.js') !!}
 <div class="text-center" style="margin-bottom: 10px;">
     <i class="fas fa-circle" style="color: #FF0000;"></i> Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <i class="fas fa-circle" style="color: #FFA6A6;"></i> Partial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<i class="fas fa-circle" style="color: #FFA6A6;"></i> Partial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
     <i class="fas fa-circle" style="color: #88A4BC;"></i> Unknown 
 </div>
 <div id="map"></div>
