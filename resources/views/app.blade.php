@@ -259,16 +259,19 @@
                                         </div>
                                         <div class="card-body" style="height: 300px; overflow-y: scroll;">
                                             <p>
-                                                <a href="#">FG extends lockdown by another 14 days</a>
+                                                <a target="_blank" href="https://allafrica.com/stories/202004130515.html">UPDATE: President Buhari extends lockdown in Lagos, Ogun, Abuja by 14 days</a>
                                             </p>
                                             <p>
-                                                <a href="#">Global confirmed cases of COVID-19 reaches 2 million</a>
+                                                <a target="_blank" href="http://venturesafrica.com/we-have-drug-insecurity-because-of-coronavirus-nafdac-dg/">WE HAVE DRUG INSECURITY BECAUSE OF CORONAVIRUS” – NAFDAC DG</a>
                                             </p>
                                             <p>
-                                                <a href="#">Security issues amidst the coronavirus lockdown</a>
+                                                <a target="_blank" href="https://www.aljazeera.com/news/2020/04/armed-bandits-kill-47-nigeria-katsina-state-police-200419183056608.html">Armed bandits kill at lest 47 in Nigeria's Katsina state: Police</a>
                                             </p>
                                             <p>
-                                                <a href="#">Lockdown: Citizens appeal to FG for support</a>
+                                                <a target="_blank" href="https://www.premiumtimesng.com/news/388803-coronavirus-nigeria-records-highest-daily-figure-total-now-627.html">Coronavirus: Nigeria records highest daily figure, total now 627</a>
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="https://nairametrics.com/2020/04/13/president-buhari-extends-lockdown-in-lagos-ogun-abuja-by-14-days/">UPDATE: President Buhari extends lockdown in Lagos, Ogun, Abuja by 14 days</a>
                                             </p>
                                         </div>
                                     </div>
