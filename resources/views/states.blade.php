@@ -69,4 +69,15 @@
 <p align="justify">
     {{ $state->info }}
 </p>
+@if ($state->risk_rating)
+<h4>Travel Advisory</h4>
+@if ($state->risk_rating == "High")
+<p align="justify"><strong>Do Not Travel:</strong> This is the highest advisory level due to greater likelihood of life-threatening risks. During an emergency, Armada Halogen advises that citizens and non-citizen who consider traveling to the state consult the Armada Halogen for services to reduce the risk and mitigate further hazard to life and property. Conditions in any state may change at any time.</p>
+@elseif ($state->risk_rating == "Moderate")
+<p align="justify"><strong>Exercise Increased Caution:</strong> Be aware of heightened or serious risks to safety and security. Armada Halogen provides additional advice for travelers in these areas in the Travel Advisory. Conditions in any state may change at any time.</p>
+@elseif ($state->risk_rating == "Low")
+<p align="justify"><strong>Exercise Normal Precautions:</strong> This is the lowest advisory level for safety and security risk. There is some risk for any international travel or local travel. Conditions in other state/countries may differ from those in the Nigeria and may change at any time.</p>
+@endif
+For more information, visit <a target="_blank" href="https://armadahalogen.com/">Armada Halogen</a>.
+@endif
 @endsection
