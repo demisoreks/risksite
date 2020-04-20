@@ -215,7 +215,7 @@
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://pbs.twimg.com/media/EV6s_sxWkAALyK4?format=jpg&name=medium" class="img-fluid" />
+                                            <img src="https://pbs.twimg.com/media/EWAHqVDWsAcKoqh?format=jpg&name=medium" class="img-fluid" />
                                         </div>
                                     </div>
                                 </div>

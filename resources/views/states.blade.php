@@ -40,22 +40,18 @@
             <div class="card-body" style="height: 302px; overflow-y: scroll;">
                 <div id="incidents" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <p class="text-danger">Armed Robbery</p>
-                            <h5 class="text-info">Armed bandits in Lagos</h5>
+                        <?php $count = 0; ?>
+                        @foreach ($incidents as $incident)
+                        <div class="carousel-item @if ($count == 0) active @endif text-center">
+                            <p class="text-danger">{{ $incident->type }}</p>
+                            <h5 class="text-info">{{ $incident->title }}</h5>
                             <p>
-                                Lagos State<br />Saturday, April 11, 2020
+                                {{ $incident->state }} State<br />{{ Carbon\Carbon::parse($incident->incident_date)->format('l, F j, Y') }}
                             </p>
-                            <p>Hoodlums attack Agege, Ogba and Iju areas of Lagos. Residents fight back.</p>
+                            <p>{{ $incident->info }}</p>
                         </div>
-                        <div class="carousel-item text-center">
-                            <p class="text-danger">Incident Category</p>
-                            <h5 class="text-info">Title of incident</h5>
-                            <p>
-                                Lagos State<br />Saturday, April 11, 2020
-                            </p>
-                            <p>Some information about the incident. Some information about the incident. Some information about the incident.</p>
-                        </div>
+                        <?php $count ++; ?>
+                        @endforeach
                     </div>
                     <a class="carousel-control-prev" href="#incidents" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon text-danger" aria-hidden="true">&lt;</span>

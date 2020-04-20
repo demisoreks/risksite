@@ -23,4 +23,12 @@ class API extends Controller
         $body = $response->getBody()->getContents();
         return $body;
     }
+    
+    public static function getIncidents($id) {
+        $base_url = config('var.api_base_url');
+        $client = new Client();
+        $response = $client->request('GET', $base_url.'incidents/'.$id);
+        $body = $response->getBody()->getContents();
+        return $body;
+    }
 }
