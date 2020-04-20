@@ -6,34 +6,36 @@
         <table class="table table-bordered table-hover table-striped" width="100%">
             <tr>
                 <td width="50%">State Name</td>
-                <td><strong>Lagos</strong></td>
+                <td><strong>{{ $state->name }}</strong></td>
             </tr>
             <tr>
                 <td>Lockdown Status</td>
-                <td><strong>Yes</strong></td>
+                <td><strong>@if ($state->lockdown_status == 'Total' || $state->lockdown_status == 'Partial') Yes @else No @endif</strong></td>
             </tr>
             <tr>
                 <td>Lockdown Policy</td>
-                <td><a class="btn btn-primary btn-sm" href="#"><strong>Click Here</strong></a></td>
+                <td><a class="btn btn-primary btn-sm" href="{{ $state->lockdown_policy }}" target="_blank"><strong>Click Here</strong></a></td>
             </tr>
             <tr>
                 <td>End of Lockdown</td>
-                <td><strong>April 27, 2020</strong></td>
+                <td><strong>@if ($state->lockdown_end) {{ Carbon\Carbon::parse($state->lockdown_end)->format('l, F j, Y') }} @endif</strong></td>
             </tr>
             <tr>
                 <td>Risk Rating</td>
-                <td class="text-danger"><strong>High</strong></td>
+                <td class="@if ($state->risk_rating == 'High') text-danger @elseif ($state->risk_rating == 'Moderate') text-warning @elseif ($state->risk_rating == 'Low') text-success @endif">
+                    <strong>{{ $state->risk_rating }}</strong>
+                </td>
             </tr>
             <tr>
                 <td>Emergency Numbers</td>
-                <td><strong>767</strong></td>
+                <td><strong>{{ $state->emergency }}</strong></td>
             </tr>
         </table>
     </div>
     <div class="col-md-6" style="margin-bottom: 20px;">
         <div class="card">
             <div class="card-header bg-white text-primary">
-                <strong>STATE INCIDENTS</strong>
+                <strong>STATE INCIDENTS (Sample content)</strong>
             </div>
             <div class="card-body" style="height: 302px; overflow-y: scroll;">
                 <div id="incidents" class="carousel slide" data-ride="carousel">
@@ -69,6 +71,6 @@
     </div>
 </div>
 <p align="justify">
-    Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. Lockdown info and any other details. 
+    {{ $state->info }}
 </p>
 @endsection

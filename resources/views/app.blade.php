@@ -222,7 +222,7 @@
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>RISK PROFILE</strong>
+                                            <strong>SECURITY RISK PROFILE</strong>
                                         </div>
                                         <div class="card-body">
                                             <a href="{{ route('profile') }}">{{ Html::image('images/profile.jpg', 'Risk Profile', ['class' => 'img-fluid']) }}</a>
@@ -243,7 +243,7 @@
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>SURVEY STATS</strong>
+                                            <strong>HEADLINES</strong>
                                         </div>
                                         <div class="card-body">
                                             
@@ -281,21 +281,27 @@
             <div class="row bg-secondary">
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.jpg', 'PS Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Man Guarding</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://armadahalogen.com/">{{ Html::image('images/logos/armada.jpg', 'Armada Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Secured Mobility, Risk Assessment & Route Mapping</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://armourxhalogen.com/">{{ Html::image('images/logos/armourx.jpg', 'ArmourX Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Cyber Security</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://averthalogen.com/">{{ Html::image('images/logos/avert.jpg', 'Avert Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Electronics Security, Fleet Management & Telematics Solution</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://academyhalogen.com/">{{ Html::image('images/logos/academy.jpg', 'Academy Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Enterprise Security Risk Management Education, Policy & Thought Leadership</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://avanthalogen.com/">{{ Html::image('images/logos/avant.jpg', 'Avant Halogen', ['class' => 'img-fluid']) }}</a>
+                    <p class="text-center text-primary">Identity Management, Talent Risk & Outsourcing Solutions, Investigations & Background Check</p>
                 </div>
             </div>
             <div class="row bg-primary text-white">

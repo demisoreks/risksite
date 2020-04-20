@@ -71,6 +71,7 @@ class SiteController extends Controller
     }
     
     public function states($id) {
-        return view('states');
+        $state = json_decode(API::getState($id));
+        return view('states', compact('state'));
     }
 }
