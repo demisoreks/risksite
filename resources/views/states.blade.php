@@ -53,11 +53,11 @@
                         <?php $count ++; ?>
                         @endforeach
                     </div>
-                    <a class="carousel-control-prev" href="#incidents" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#incidents" role="button" data-slide="prev" style="align-items: flex-start; font-weight: bold;">
                         <span class="carousel-control-prev-icon text-danger" aria-hidden="true">&lt;</span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#incidents" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#incidents" role="button" data-slide="next" style="align-items: flex-start; font-weight: bold;">
                         <span class="carousel-control-next-icon text-danger" aria-hidden="true">&gt;</span>
                         <span class="sr-only">Next</span>
                     </a>
