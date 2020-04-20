@@ -35,7 +35,7 @@
     <div class="col-md-6" style="margin-bottom: 20px;">
         <div class="card">
             <div class="card-header bg-white text-primary">
-                <strong>STATE INCIDENTS (Sample content)</strong>
+                <strong>STATE INCIDENTS</strong>
             </div>
             <div class="card-body" style="height: 302px; overflow-y: scroll;">
                 <div id="incidents" class="carousel slide" data-ride="carousel">
