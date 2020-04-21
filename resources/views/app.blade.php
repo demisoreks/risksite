@@ -248,7 +248,7 @@
                                         </div>
                                         <div class="card-body" style="height: 122px; overflow-y: scroll;">
                                             <p>
-                                                <a target="_blank" href="https://allafrica.com/stories/202004130515.html">AcademyHalogen COVID-19 Survey</a>
+                                                85% of Nigerians Believe Insecurity Will Rise<br /><a target="_blank" href="https://allafrica.com/stories/202004130515.html">Click link to view result</a>
                                             </p>
                                         </div>
                                     </div>
