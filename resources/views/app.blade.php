@@ -194,6 +194,7 @@
                         <a class="btn btn-secondary text-primary" data-toggle="modal" data-target="#modal1">Subscribe Now</a>
                     </div>
                 </div>
+                @include('commons.message')
             </div>
             <div class="row">
                 <div class="col-md-12" style="padding: 30px 20px;">

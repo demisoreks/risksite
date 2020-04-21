@@ -75,4 +75,16 @@ class SiteController extends Controller
         $incidents = json_decode(API::getIncidents($id));
         return view('states', compact('state', 'incidents'));
     }
+    
+    public function subscribe(Request $request) {
+        $feedback = json_decode(API::storeSubscriber($request));
+        $response = $feedback['response'];
+        if ($response['code'] == '00') {
+            return Redirect::back()
+                    ->with('success', 'Thank you for subscribing!');
+        } else {
+            return Redirect::back()
+                    ->with('error', 'Unknown error!');
+        }
+    }
 }

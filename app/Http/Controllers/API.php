@@ -31,4 +31,12 @@ class API extends Controller
         $body = $response->getBody()->getContents();
         return $body;
     }
+    
+    public static function storeSubscriber(Request $request) {
+        $base_url = config('var.api_base_url');
+        $client = new Client();
+        $response = $client->request('POST', $base_url.'subscribers/store', ['name' => $request->name, 'email' => $request->email]);
+        $body = $response->getBody()->getContents();
+        return $body;
+    }
 }
