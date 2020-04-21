@@ -216,7 +216,7 @@
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://pbs.twimg.com/media/EWAHqVDWsAcKoqh?format=jpg&name=medium" class="img-fluid" />
+                                            <img src="https://pbs.twimg.com/media/EWFGwOZU0AApEsE?format=jpg&name=medium" class="img-fluid" />
                                         </div>
                                     </div>
                                 </div>
@@ -246,8 +246,10 @@
                                         <div class="card-header bg-white text-primary">
                                             <strong>HEADLINES</strong>
                                         </div>
-                                        <div class="card-body">
-                                            
+                                        <div class="card-body" style="height: 122px; overflow-y: scroll;">
+                                            <p>
+                                                <a target="_blank" href="https://allafrica.com/stories/202004130515.html">AcademyHalogen COVID-19 Survey</a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -285,27 +287,27 @@
             <div class="row bg-secondary">
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.jpg', 'PS Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">Technology supported physical security</p>
+                    <p class="text-center text-primary">Physical Security</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://armadahalogen.com/">{{ Html::image('images/logos/armada.jpg', 'Armada Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">Moving with you</p>
+                    <p class="text-center text-primary">Travel Security</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://armourxhalogen.com/">{{ Html::image('images/logos/armourx.jpg', 'ArmourX Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">Protecting you in a virtual and open world</p>
+                    <p class="text-center text-primary">Cyber Security</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://averthalogen.com/">{{ Html::image('images/logos/avert.jpg', 'Avert Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">Clear sight and control</p>
+                    <p class="text-center text-primary">Electronic Security</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://academyhalogen.com/">{{ Html::image('images/logos/academy.jpg', 'Academy Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">Creating knowledge in pursuit of safety in an open world</p>
+                    <p class="text-center text-primary">Security Education and Thought Leadership</p>
                 </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://avanthalogen.com/">{{ Html::image('images/logos/avant.jpg', 'Avant Halogen', ['class' => 'img-fluid']) }}</a>
-                    <p class="text-center text-primary">We accelerate businesses with people risk management solutions</p>
+                    <p class="text-center text-primary">Outsourcing, Background Check and Investigations</p>
                 </div>
             </div>
             <div class="row bg-primary text-white">
