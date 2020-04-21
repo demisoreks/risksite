@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Redirect;
 use Carbon\Carbon;
 
 class SiteController extends Controller
@@ -78,8 +79,8 @@ class SiteController extends Controller
     
     public function subscribe(Request $request) {
         $feedback = json_decode(API::storeSubscriber($request));
-        $response = $feedback['response'];
-        if ($response['code'] == '00') {
+        $response = $feedback->response;
+        if ($response->code == '00') {
             return Redirect::back()
                     ->with('success', 'Thank you for subscribing!');
         } else {
