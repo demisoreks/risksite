@@ -12,8 +12,7 @@
 <div class="text-center" style="margin-bottom: 10px;">
     <i class="fas fa-circle" style="color: #FF0000;"></i> High &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <i class="fas fa-circle" style="color: #FF9900;"></i> Moderate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <i class="fas fa-circle" style="color: #00CC00;"></i> Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <i class="fas fa-circle" style="color: #88A4BC;"></i> Unknown 
+    <i class="fas fa-circle" style="color: #00CC00;"></i> Low 
 </div>
 <div id="map"></div>
 @endsection

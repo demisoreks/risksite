@@ -248,7 +248,7 @@
                                         </div>
                                         <div class="card-body" style="height: 122px; overflow-y: scroll;">
                                             <p>
-                                                <a target="_blank" href="https://allafrica.com/stories/202004130515.html">AcademyHalogen COVID-19 Survey</a>
+                                                <a target="_blank" href="#">AcademyHalogen COVID-19 Survey</a>
                                             </p>
                                         </div>
                                     </div>
