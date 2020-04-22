@@ -217,7 +217,7 @@
                                             <strong>COVID-19 UPDATE</strong>
                                         </div>
                                         <div class="card-body">
-                                            <img src="https://pbs.twimg.com/media/EWFGwOZU0AApEsE?format=jpg&name=medium" class="img-fluid" />
+                                            <img src="{{ json_decode(App\Http\Controllers\API::getSettings())->covid_image_link }}" class="img-fluid" />
                                         </div>
                                     </div>
                                 </div>

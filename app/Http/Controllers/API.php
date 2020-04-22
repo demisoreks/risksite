@@ -39,4 +39,12 @@ class API extends Controller
         $body = $response->getBody()->getContents();
         return $body;
     }
+    
+    public static function getSettings() {
+        $base_url = config('var.api_base_url');
+        $client = new Client();
+        $response = $client->request('GET', $base_url.'settings/get');
+        $body = $response->getBody()->getContents();
+        return $body;
+    }
 }

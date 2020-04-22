@@ -14,6 +14,9 @@ class SiteController extends Controller
         $lockdown_status = [];
         $lockdown_color = [];
         $lockdown_color_h = [];
+        $total_count = 0;
+        $partial_count = 0;
+        $none_count = 0;
         foreach ($states as $state) {
             if ($state->lockdown_end) {
                 $lockdown_end = Carbon::parse($state->lockdown_end)->format('l, F j, Y');
@@ -24,18 +27,21 @@ class SiteController extends Controller
                 $lockdown_status[$state->id] = "Lockdown<br />Ends: ".$lockdown_end;
                 $lockdown_color[$state->id] = "#FF0000";
                 $lockdown_color_h[$state->id] = "#990000";
+                $total_count ++;
             } else if ($state->lockdown_status == "Partial") {
                 $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".$lockdown_end;
                 $lockdown_color[$state->id] = "#FFA6A6";
                 $lockdown_color_h[$state->id] = "#FF8484";
+                $partial_count ++;
             } else {
                 $lockdown_status[$state->id] = "No Lockdown";
                 $lockdown_color[$state->id] = "#88A4BC";
                 $lockdown_color_h[$state->id] = "#3B729F";
+                $none_count ++;
             }
         }
         
-        return view('index', compact('states', 'lockdown_status', 'lockdown_color', 'lockdown_color_h'));
+        return view('index', compact('states', 'lockdown_status', 'lockdown_color', 'lockdown_color_h', 'total_count', 'partial_count', 'none_count'));
     }
     
     public function travel() {
