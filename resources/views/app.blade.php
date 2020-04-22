@@ -249,7 +249,11 @@
                                         </div>
                                         <div class="card-body" style="height: 122px; overflow-y: scroll;">
                                             <p>
+                                                @if (json_decode(App\Http\Controllers\API::getSettings())->headline_link)
                                                 <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->headline_link }}">{{ json_decode(App\Http\Controllers\API::getSettings())->headline_text }}</a>
+                                                @else
+                                                {{ json_decode(App\Http\Controllers\API::getSettings())->headline_text }}
+                                                @endif
                                             </p>
                                         </div>
                                     </div>
