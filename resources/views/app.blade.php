@@ -245,11 +245,11 @@
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>HEADLINES</strong>
+                                            <strong>HEADLINE</strong>
                                         </div>
                                         <div class="card-body" style="height: 122px; overflow-y: scroll;">
                                             <p>
-                                                85% of Nigerians Believe Insecurity Will Rise<br /><a target="_blank" href="https://allafrica.com/stories/202004130515.html">Click link to view result</a>
+                                                <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->headline_link }}">{{ json_decode(App\Http\Controllers\API::getSettings())->headline_text }}</a>
                                             </p>
                                         </div>
                                     </div>
@@ -263,19 +263,31 @@
                                         </div>
                                         <div class="card-body" style="height: 300px; overflow-y: scroll;">
                                             <p>
-                                                <a target="_blank" href="https://allafrica.com/stories/202004130515.html">UPDATE: President Buhari extends lockdown in Lagos, Ogun, Abuja by 14 days</a>
+                                                <a target="_blank" href="https://www.channelstv.com/2020/04/21/buhari-loses-personal-bodyguard/">BUHARI LOSES PERSONAL BODYGUARD</a>
                                             </p>
                                             <p>
-                                                <a target="_blank" href="http://venturesafrica.com/we-have-drug-insecurity-because-of-coronavirus-nafdac-dg/">WE HAVE DRUG INSECURITY BECAUSE OF CORONAVIRUS” – NAFDAC DG</a>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/buhari-approves-payment-of-february-march-salaries-of-varsity-lecturers/">IPPIS: Buhari approves payment of February, March salaries of Varsity lecturers</a>
                                             </p>
                                             <p>
-                                                <a target="_blank" href="https://www.aljazeera.com/news/2020/04/armed-bandits-kill-47-nigeria-katsina-state-police-200419183056608.html">Armed bandits kill at lest 47 in Nigeria's Katsina state: Police</a>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/coronavirus-vaccine-to-be-tried-on-people-from-thursday-%e2%80%95-uk-health-official/">Coronavirus vaccine to be tried on people from Thursday ― UK Health official</a>
                                             </p>
                                             <p>
-                                                <a target="_blank" href="https://www.premiumtimesng.com/news/388803-coronavirus-nigeria-records-highest-daily-figure-total-now-627.html">Coronavirus: Nigeria records highest daily figure, total now 627</a>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/lasg-approves-n25000-hazard-allowance-for-health-workers/">LASG approves N25,000 hazard allowance  for health workers</a>
                                             </p>
                                             <p>
-                                                <a target="_blank" href="https://nairametrics.com/2020/04/13/president-buhari-extends-lockdown-in-lagos-ogun-abuja-by-14-days/">UPDATE: President Buhari extends lockdown in Lagos, Ogun, Abuja by 14 days</a>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/netflix-profits-soar-as-pandemic-shut-ins-sign-up/">Netflix profits soar as pandemic shut-ins sign up</a>
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/remote-working-530000-zoom-accounts-hacked/">Remote working: 530,000 zoom accounts hacked</a>
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/photo-fake-vaccine-made-in-kano-for-covid-19/">PHOTO: Fake Vaccine made in Kano for COVID-19</a>
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="https://www.vanguardngr.com/2020/04/how-intelligent-securityll-drive-ecommerce-growth/">How intelligent security will drive eCommerce growth</a>
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="http://saharareporters.com/2020/04/19/gunmen-assassinate-civil-defence-officer-benue">Gunmen Assassinate Civil Defence Officer In Benue</a>
                                             </p>
                                         </div>
                                     </div>

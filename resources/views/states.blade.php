@@ -27,6 +27,10 @@
                 </td>
             </tr>
             <tr>
+                <td>COVID-19 Cases</td>
+                <td><strong>{{ number_format($state->covid_count, 0) }} Confirmed</strong></td>
+            </tr>
+            <tr>
                 <td>Emergency Numbers</td>
                 <td><strong>{{ $state->emergency }}</strong></td>
             </tr>
@@ -37,7 +41,7 @@
             <div class="card-header bg-white text-primary">
                 <strong>STATE INCIDENTS</strong>
             </div>
-            <div class="card-body" style="height: 302px; overflow-y: scroll;">
+            <div class="card-body" style="height: 357px; overflow-y: scroll;">
                 <div id="incidents" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <?php $count = 0; ?>

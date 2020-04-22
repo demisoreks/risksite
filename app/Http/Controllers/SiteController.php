@@ -24,17 +24,17 @@ class SiteController extends Controller
                 $lockdown_end = "Unknown";
             }
             if ($state->lockdown_status == "Total") {
-                $lockdown_status[$state->id] = "Lockdown<br />Ends: ".$lockdown_end;
+                $lockdown_status[$state->id] = "Lockdown<br />Ends: ".$lockdown_end."<br />Confirmed COVID-19 Cases: ".number_format($state->covid_count, 0);
                 $lockdown_color[$state->id] = "#FF0000";
                 $lockdown_color_h[$state->id] = "#990000";
                 $total_count ++;
             } else if ($state->lockdown_status == "Partial") {
-                $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".$lockdown_end;
+                $lockdown_status[$state->id] = "Partial Lockdown<br />Ends: ".$lockdown_end."<br />Confirmed COVID-19 Cases: ".number_format($state->covid_count, 0);
                 $lockdown_color[$state->id] = "#FFA6A6";
                 $lockdown_color_h[$state->id] = "#FF8484";
                 $partial_count ++;
             } else {
-                $lockdown_status[$state->id] = "No Lockdown";
+                $lockdown_status[$state->id] = "No Lockdown<br />Confirmed COVID-19 Cases: ".number_format($state->covid_count, 0);
                 $lockdown_color[$state->id] = "#88A4BC";
                 $lockdown_color_h[$state->id] = "#3B729F";
                 $none_count ++;
