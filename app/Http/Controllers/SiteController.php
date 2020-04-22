@@ -88,4 +88,8 @@ class SiteController extends Controller
                     ->with('error', 'Unknown error!');
         }
     }
+    
+    public function privacy() {
+        return view('privacy');
+    }
 }

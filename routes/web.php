@@ -27,3 +27,6 @@ Route::get('states/{state_id}', [
 Route::post('subscribe', [
     'as' => 'subscribe', 'uses' => 'SiteController@subscribe'
 ]);
+Route::get('privacy', [
+    'as' => 'privacy', 'uses' => 'SiteController@privacy'
+]);

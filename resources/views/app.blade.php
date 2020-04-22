@@ -166,6 +166,7 @@
         @endif
         <div class="container-fluid" style="height: 100vh;">
             <div class="sticky-top">
+                @include('cookieConsent::index')
                 <div class="row bg-white" style="padding: 20px;">
                     <div class="col-md-6">
                         <div class="float-sm-left" style="display: flex; align-items: center; justify-content: center;">
@@ -312,6 +313,7 @@
             </div>
             <div class="row bg-primary text-white">
                 <div class="col-12 text-center" style="padding: 40px;">
+                    <p class="text-sm"><a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
                     Powered by<br />
                     <a href="https://halogensecurity.com" target="_blank">
                         {{ Html::image('images/logo-new-small.jpg', 'Halogen Logo', ['width' => 60]) }}
