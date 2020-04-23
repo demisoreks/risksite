@@ -14,5 +14,9 @@
     <!--<i class="fas fa-circle" style="color: #FFA6A6;"></i> Partial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
     <i class="fas fa-circle" style="color: #88A4BC;"></i> No Lockdown ({{ $none_count }})
 </div>
-<div id="map"></div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="map"></div>
+    </div>
+</div>
 @endsection

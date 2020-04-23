@@ -206,11 +206,11 @@
                         </div>
                         <div class="col-md-5" class="col-md-8" style="margin-bottom: 20px;">
                             <div class="row">
-                                <!--
+                                @if (json_decode(App\Http\Controllers\API::getSettings())->intel_report_link)
                                 <div class="col-md-12" style="margin-bottom: 15px;">
-                                    <a href="{{ route('profile') }}" class="btn btn-block btn-blue-grey btn-lg">National Security Risk Profile</a>
+                                    <a href="{{ json_decode(App\Http\Controllers\API::getSettings())->intel_report_link }}" class="btn btn-block btn-blue-grey btn-lg">Latest Security Intel Report</a>
                                 </div>
-                                -->
+                                @endif
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
@@ -266,6 +266,12 @@
                                             <strong>NEWS FEEDS</strong>
                                         </div>
                                         <div class="card-body" style="height: 300px; overflow-y: scroll;">
+                                            @foreach (json_decode(App\Http\Controllers\API::getNewsFeeds()) as $newsFeed)
+                                            <p>
+                                                <a target="_blank" href="{{ $newsFeed->link }}">{{ $newsFeed->title }}</a>
+                                            </p>
+                                            @endforeach
+                                            <!--
                                             <p>
                                                 <a target="_blank" href="https://www.channelstv.com/2020/04/21/buhari-loses-personal-bodyguard/">BUHARI LOSES PERSONAL BODYGUARD</a>
                                             </p>
@@ -293,6 +299,7 @@
                                             <p>
                                                 <a target="_blank" href="http://saharareporters.com/2020/04/19/gunmen-assassinate-civil-defence-officer-benue">Gunmen Assassinate Civil Defence Officer In Benue</a>
                                             </p>
+                                            -->
                                         </div>
                                     </div>
                                 </div>
@@ -329,7 +336,7 @@
             </div>
             <div class="row bg-primary text-white">
                 <div class="col-12 text-center" style="padding: 40px;">
-                    <p class="text-sm"><a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
+                    <p class="text-sm"><a href="{{ route('disclaimer') }}">Disclaimer</a> | <a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
                     Powered by<br />
                     <a href="https://halogensecurity.com" target="_blank">
                         {{ Html::image('images/logo-new-small.jpg', 'Halogen Logo', ['width' => 60]) }}

@@ -30,3 +30,6 @@ Route::post('subscribe', [
 Route::get('privacy', [
     'as' => 'privacy', 'uses' => 'SiteController@privacy'
 ]);
+Route::get('disclaimer', [
+    'as' => 'disclaimer', 'uses' => 'SiteController@disclaimer'
+]);

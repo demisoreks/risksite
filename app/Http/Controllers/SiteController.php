@@ -98,4 +98,8 @@ class SiteController extends Controller
     public function privacy() {
         return view('privacy');
     }
+    
+    public function disclaimer() {
+        return view('disclaimer');
+    }
 }
