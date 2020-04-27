@@ -336,7 +336,7 @@
             </div>
             <div class="row bg-primary text-white">
                 <div class="col-12 text-center" style="padding: 40px;">
-                    <p><h5><i class="fas fa-envelope"></i> controlroom.headoffice@averthalogen.com</h5></p>
+                    <p><i class="fas fa-envelope"></i> controlroom.headoffice@averthalogen.com</p>
                     <p class="text-sm"><a href="{{ route('disclaimer') }}">Disclaimer</a> | <a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
                     <a href="https://halogen-group.com" target="_blank">Halogen Group</a> &copy; {{ date("Y") }} All rights reserved.<br /><br />
                     <p>
