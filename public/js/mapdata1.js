@@ -76,7 +76,7 @@ var simplemaps_countrymap_mapdata={
       name: "Borno",
       color: risk_color[8],
       hover_color: risk_color_h[8],
-      url: "states/10",
+      url: "states/8",
       description: risk_rating[8]
     },
     NGA2841: {

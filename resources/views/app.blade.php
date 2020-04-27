@@ -336,12 +336,18 @@
             </div>
             <div class="row bg-primary text-white">
                 <div class="col-12 text-center" style="padding: 40px;">
+                    <p><h5><i class="fas fa-envelope"></i> controlroom.headoffice@averthalogen.com</h5></p>
                     <p class="text-sm"><a href="{{ route('disclaimer') }}">Disclaimer</a> | <a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
-                    Powered by<br />
-                    <a href="https://halogensecurity.com" target="_blank">
-                        {{ Html::image('images/logo-new-small.jpg', 'Halogen Logo', ['width' => 60]) }}
-                    </a><br />
-                    &copy; {{ date("Y") }} All rights reserved.
+                    <a href="https://halogen-group.com" target="_blank">Halogen Group</a> &copy; {{ date("Y") }} All rights reserved.<br /><br />
+                    <p>
+                        <script type="text/javascript"> //<![CDATA[
+  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script language="JavaScript" type="text/javascript">
+  TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_lg_222x54.png", "POSDV", "none");
+</script>
+                    </p>
                 </div>
             </div>
         </div>
@@ -350,7 +356,7 @@
             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title"><strong>Joining mailing list!</strong></h5>
+                        <h5 class="modal-title"><strong>Join mailing list!</strong></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -363,5 +369,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>
