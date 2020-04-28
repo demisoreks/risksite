@@ -167,10 +167,10 @@
         <div class="container-fluid" style="height: 100vh;">
             <div class="sticky-top">
                 @include('cookieConsent::index')
-                <div class="row bg-white" style="padding: 20px;">
+                <div class="row bg-white" style="padding: 10px 20px;">
                     <div class="col-md-6">
                         <div class="float-sm-left" style="display: flex; align-items: center; justify-content: center;">
-                            <a href="{{ route('home') }}">{{ Html::image('images/logo.png', 'Logo', ['height' => 30]) }}</a>
+                            <a href="{{ route('home') }}">{{ Html::image('images/logo.png', 'Logo', ['height' => 58]) }}</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -247,7 +247,7 @@
                                         <div class="card-header bg-white text-primary">
                                             <strong>HEADLINE</strong>
                                         </div>
-                                        <div class="card-body" style="height: 122px; overflow-y: scroll;">
+                                        <div class="card-body bg-primary" style="height: 122px; overflow-y: scroll;">
                                             <p>
                                                 @if (json_decode(App\Http\Controllers\API::getSettings())->headline_link)
                                                 <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->headline_link }}">{{ json_decode(App\Http\Controllers\API::getSettings())->headline_text }}</a>

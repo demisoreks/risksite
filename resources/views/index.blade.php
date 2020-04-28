@@ -19,4 +19,22 @@
         <div id="map"></div>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered table-hover table-striped" width="100%">
+            @if (count($lockdown_states) > 0)
+            <tr>
+                <td>Lockdown</td>
+                <td>{{ implode(", ", $lockdown_states) }}</td>
+            </tr>
+            @endif
+            @if (count($no_lockdown_states) > 0)
+            <tr>
+                <td>No Lockdown</td>
+                <td>{{ implode(", ", $no_lockdown_states) }}</td>
+            </tr>
+            @endif
+        </table>
+    </div>
+</div>
 @endsection

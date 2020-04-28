@@ -82,6 +82,17 @@
 @elseif ($state->risk_rating == "Low")
 <p align="justify"><strong>Exercise Normal Precautions:</strong> This is the lowest advisory level for safety and security risk. There is some risk for any international travel or local travel. Conditions in other state/countries may differ from those in the Nigeria and may change at any time.</p>
 @endif
-For more information, visit <a target="_blank" href="https://armadahalogen.com/">Armada Halogen</a>.
+<p align="justify">For more information, visit <a target="_blank" href="https://armadahalogen.com/">Armada Halogen</a>.</p>
 @endif
+<h4>Incident Statistics (Last 7 Days)</h4>
+<div class="row">
+    <div class="col-md-6">
+        {!! $date_chart->container() !!}
+        {!! $date_chart->script() !!}
+    </div>
+    <div class="col-md-6">
+        {!! $type_chart->container() !!}
+        {!! $type_chart->script() !!}
+    </div>
+</div>
 @endsection
