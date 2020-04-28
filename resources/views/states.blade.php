@@ -45,7 +45,7 @@
                 <div id="incidents" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <?php $count = 0; ?>
-                        @foreach ($incidents as $incident)
+                        @foreach (array_reverse($incidents) as $incident)
                         <div class="carousel-item @if ($count == 0) active @endif text-center">
                             <p class="text-danger">{{ $incident->type }}</p>
                             <h5 class="text-info">{{ $incident->title }}</h5>
