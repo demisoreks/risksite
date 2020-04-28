@@ -208,7 +208,7 @@
                             <div class="row">
                                 @if (json_decode(App\Http\Controllers\API::getSettings())->intel_report_link)
                                 <div class="col-md-12" style="margin-bottom: 15px;">
-                                    <a href="{{ json_decode(App\Http\Controllers\API::getSettings())->intel_report_link }}" class="btn btn-block btn-blue-grey btn-lg">Latest Security Intel Report</a>
+                                    <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->intel_report_link }}" class="btn btn-block btn-blue-grey btn-lg">Latest Security Intel Report</a>
                                 </div>
                                 @endif
                                 <div class="col-md-6" style="margin-bottom: 20px;">
