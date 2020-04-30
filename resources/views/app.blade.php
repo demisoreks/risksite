@@ -157,6 +157,7 @@
         </script>
 
         <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans"rel="stylesheet">
         
     </head>
     
@@ -185,6 +186,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('travel') }}">Travel Advisory</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://halogen-group.com/page?mp=About%20Us" target="_blank">About Us</a>
+                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -208,7 +213,7 @@
                             <div class="row">
                                 @if (json_decode(App\Http\Controllers\API::getSettings())->intel_report_link)
                                 <div class="col-md-12" style="margin-bottom: 15px;">
-                                    <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->intel_report_link }}" class="btn btn-block btn-blue-grey btn-lg">Latest Security Intel Report</a>
+                                    <a target="_blank" href="{{ json_decode(App\Http\Controllers\API::getSettings())->intel_report_link }}" class="btn btn-block btn-blue-grey btn-lg">Click here to get the latest security report in Nigeria</a>
                                 </div>
                                 @endif
                                 <div class="col-md-6" style="margin-bottom: 20px;">
@@ -245,7 +250,7 @@
                                 <div class="col-md-6" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>HEADLINE</strong>
+                                            <strong>BREAKING NEWS</strong>
                                         </div>
                                         <div class="card-body bg-primary" style="height: 122px; overflow-y: scroll;">
                                             <p>
@@ -263,7 +268,7 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;">
                                     <div class="card">
                                         <div class="card-header bg-white text-primary">
-                                            <strong>NEWS FEEDS</strong>
+                                            <strong>TOP SECURITY STORIES IN NIGERIA</strong>
                                         </div>
                                         <div class="card-body" style="height: 300px; overflow-y: scroll;">
                                             @foreach (json_decode(App\Http\Controllers\API::getNewsFeeds()) as $newsFeed)
@@ -309,6 +314,9 @@
                 </div>
             </div>
             <div class="row bg-secondary">
+                <div class="col-md-12 text-center text-primary" style="margin-top: 30px;">
+                    <h3>Our Affiliates</h3>
+                </div>
                 <div class="col-md-4 col-lg-2" style="padding: 30px;">
                     <a target="_blank" href="https://pshalogen.com/">{{ Html::image('images/logos/ps.jpg', 'PS Halogen', ['class' => 'img-fluid']) }}</a>
                     <p class="text-center text-primary">Physical Security</p>
@@ -336,7 +344,13 @@
             </div>
             <div class="row bg-primary text-white">
                 <div class="col-12 text-center" style="padding: 40px;">
-                    <p><i class="fas fa-envelope"></i> controlroom.headoffice@averthalogen.com</p>
+                    <p>
+                        <i class="fas fa-map-marker"></i> 19B, Mobolaji Bank Anthony Way, Ikeja, Lagos<br />
+                        <i class="fas fa-phone"></i> +234 1-3429012, 1-3429021 8081602646, 0700HALOGEN<br />
+                        <i class="fas fa-envelope"></i> info@halogen-group.com, controlroom.headoffice@averthalogen.com<br />
+                        Facebook: HalogenNigeria | Twitter: HalogenNG | Instagram: Halogengrp
+
+                    </p>
                     <p class="text-sm"><a href="{{ route('disclaimer') }}">Disclaimer</a> | <a href="{{ route('privacy') }}">Data Privacy Policy</a></p>
                     <a href="https://halogen-group.com" target="_blank">Halogen Group</a> &copy; {{ date("Y") }} All rights reserved.<br /><br />
                     <p>
