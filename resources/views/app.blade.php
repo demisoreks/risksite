@@ -376,11 +376,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!--
                         {!! Form::model(null, ['route' => ['subscribe'], 'class' => 'form-group']) !!}
                         @include('site/form_subscribe', ['submit_text' => 'Subscribe'])
-                        {!! Form::close() !!}-->
-                        <iframe src="https://madmimi.com/signups/08fb0d01615b4ce5a4007113da2d66e4/iframe" scrolling="no" frameborder="0" height="400" style="max-width: 400px; width: 100%;"></iframe>
+                        {!! Form::close() !!}
+                        <!--<iframe src="https://madmimi.com/signups/08fb0d01615b4ce5a4007113da2d66e4/iframe" scrolling="no" frameborder="0" height="400" style="max-width: 400px; width: 100%;"></iframe>-->
                     </div>
                 </div>
             </div>
